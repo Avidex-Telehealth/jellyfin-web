@@ -344,6 +344,20 @@ import ServerConnections from '../ServerConnections';
                 html += '<div is="emby-itemscontainer" class="itemsContainer padded-left padded-right focuscontainer-x vertical-wrap">';
             }
 
+            // inject casting view
+            const casting = {
+                ...userViews[0],
+                BackdropImageTags: [],
+                CanDelete: false,
+                CanDownload: false,
+                ChildCount: 43,
+                CollectionType: 'casting',
+                ExternalUrls: [],
+                GenreItems: [],
+                Name: 'Casting'
+            };
+            userViews.push(casting);
+
             html += cardBuilder.getCardsHtml({
                 items: userViews,
                 shape: getThumbShape(),

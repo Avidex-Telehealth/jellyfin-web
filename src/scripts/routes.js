@@ -336,6 +336,12 @@ import { appRouter } from '../components/appRouter';
     });
 
     defineRoute({
+        alias: '/casting.html',
+        path: 'casting.html',
+        controller: 'casting'
+    });
+
+    defineRoute({
         alias: '/livetvguideprovider.html',
         path: 'livetvguideprovider.html',
         autoFocus: false,

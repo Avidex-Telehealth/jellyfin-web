@@ -76,6 +76,8 @@
                 return 'videocam';
             case 'playlists':
                 return 'view_list';
+            case 'casting':
+                return 'cast';
             default:
                 return 'folder';
         }

@@ -603,6 +603,10 @@ class AppRouter {
             return '#/livetv.html';
         }
 
+        if (item.CollectionType === 'casting') {
+            return '#/casting.html';
+        }
+
         if (item.Type === 'Genre') {
             url = '#/list.html?genreId=' + item.Id + '&serverId=' + serverId;
 
