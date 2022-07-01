@@ -1,9 +1,7 @@
 export default function (view) {
-    view.addEventListener('viewdestroy', () => {
-        console.log('I was destroyed');
-    });
     view.addEventListener('viewbeforehide', () => {
         console.log('I was viewbeforehide');
+        tizen.tvwindow.hide(() => { });
     });
     view.addEventListener('viewshow', () => {
         console.log('I was shown');
